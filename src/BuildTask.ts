@@ -69,7 +69,7 @@ export default async function buildSTM(options?: { flash?: boolean; cleanBuild?:
       throw new Error(errorMsg);
     }
 
-    const makeArguments = `-j16 -f ${makefileName}`;
+    const makeArguments = `-f ${makefileName}`;
 
     if (cleanBuild) {
       await executeTask(
